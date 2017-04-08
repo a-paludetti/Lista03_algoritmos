@@ -9,13 +9,16 @@ package lista03;
  *
  * @author aline.poliveira3
  */
-public class Estruturas_repeticao {
+public class ClassEs_01 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int i = 1, j = 1;
+        while (i <= 100) {
+            if (j % 2 == 0) {
+                System.out.println(j);
+            };
+            j++;
+            i++;
+        }
     }
-    
 }

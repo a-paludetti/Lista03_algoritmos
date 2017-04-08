@@ -18,6 +18,8 @@ public class Estruturas_repeticao_For {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        // FOR: quando vc tem o controle de quantos items serão processados
+        // [enquanto tiverem x pessoas no avião, adicionar +1 pessoa]
         Scanner NN = new Scanner(System.in);
 
         int x, soma = 0;
