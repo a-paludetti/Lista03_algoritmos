@@ -16,14 +16,19 @@ public class ClassEs_05 {
     public static void main(String[] args) {
         Scanner NN = new Scanner(System.in);
 
-        System.out.print("Digite um número entre 2 e 1000: ");
-        int N = NN.nextInt();
-        int j = 1;
+        for (int i = 0; i < 2; i++) {
+            System.out.print("Digite um número entre 2 e 1000: ");
+            int N = NN.nextInt();
+            int j = 1;
+            if (N > 2 && N < 1000) {
+                System.out.println("número invalido");
+            } else {
+                do {
+                    System.out.println(j + " x " + N + " = " + (j * N));
+                    j++;
+                } while (j <= 10);
+            }
 
-        do {
-            System.out.println(j + " x " + N + " = " + (j * N));
-            j++;
-        } while (j <= 10);
-
+        }
     }
 }
