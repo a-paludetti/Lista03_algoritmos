@@ -14,15 +14,18 @@ import java.util.Random;
 public class Sudoku {
 
     public static void main(String[] args) {
-        int[][] sdk = new int[4][4];
+        int[][] sdk = new int[2][2];
+        int[][] sdk2 = new int[2][2];
+        
+        sdk[0][0] = new int [2][2];
 
         Random N1 = new Random();
-        int N2 = N1.nextInt(4)+1;
+        int N2 = N1.nextInt(4) + 1;
 
         for (int i = 0; i < sdk.length; i++) {
             for (int j = 0; j < sdk[i].length; j++) {
                 sdk[i][j] = N2;
-                System.out.print(sdk[i][j]+" ");
+                System.out.print(sdk[i][j] + " | ");
             }
             System.out.println("");
         }
